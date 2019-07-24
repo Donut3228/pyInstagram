@@ -6,3 +6,6 @@ tests/config.json
 deploy/build
 deploy/dist
 deploy/pylint.log
+env/
+.vscode/
+config.py
