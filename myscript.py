@@ -35,7 +35,7 @@ def fl():
             or "Owner" in bio
         ):
             link = f"https://www.instagram.com/{a}/"
-            requests.post(API_LINKS, data={"link": link})
+            requests.post(API_LINKS, data={"link": link, "source": INSTA_ACC})
             print(link)
     ab = agent.get_followers(account=base_acc, pointer=ac[1], count=5, limit=2, delay=5)
     return ab
