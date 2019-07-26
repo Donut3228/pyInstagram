@@ -33,6 +33,8 @@ def fl():
             or "founder" in bio
             or "owner" in bio
             or "Owner" in bio
+            or "entrepreneur" in bio
+            or "Entrepreneur" in bio
         ):
             link = f"https://www.instagram.com/{a}/"
             requests.post(API_LINKS, data={"link": link, "source": INSTA_ACC})
